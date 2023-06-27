@@ -1,6 +1,8 @@
 vim-fish
 ========
 
+> This fork remove all the functions except syntax highlighting and indentation related functions.
+
 This is an addon for Vim providing support for editing [fish][] scripts.
 
 [fish]: https://github.com/fish-shell/fish-shell

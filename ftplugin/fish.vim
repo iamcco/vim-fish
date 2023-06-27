@@ -17,15 +17,6 @@ if executable('fish_indent')
     setlocal formatexpr=fish#Format()
 endif
 
-if executable('fish')
-    setlocal omnifunc=fish#Complete
-    for s:path in split(system("fish -c 'echo $fish_function_path'"))
-        execute 'setlocal path+='.s:path
-    endfor
-else
-    setlocal omnifunc=syntaxcomplete#Complete
-endif
-
 " Use the 'man' wrapper function in fish to include fish's man pages.
 " Have to use a script for this; 'fish -c man' would make the the man page an
 " argument to fish instead of man.
